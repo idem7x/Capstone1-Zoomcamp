@@ -20,6 +20,5 @@ Notebook with all used models - https://www.kaggle.com/code/idem7x/zoomcamp-caps
 - `cd Capstone1-Zoomcamp`
 - Download https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset/download, rename it to vegetables.zip and put it into **data** folder
 - `docker build -t vegetable_predict .`
-- `docker run -it --rm -p 9696:9696 vegetable_predict`
-- open  http://0.0.0.0:9696
-
+- `docker run -it --rm -p 8080:8080 vegetable_predict`
+- `python test.py` - you can put any image URL into that file for check (['Bean', 'Bitter_Gourd', 'Bottle_Gourd', 'Brinjal', 'Broccoli', 'Cabbage', 'Capsicum', 'Carrot', 'Cauliflower', 'Cucumber', 'Papaya', 'Potato', 'Pumpkin', 'Radish', 'Tomato'])
