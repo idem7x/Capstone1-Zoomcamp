@@ -18,7 +18,7 @@ Notebook with all used models - https://www.kaggle.com/code/idem7x/zoomcamp-caps
 
 - `git clone git@github.com:idem7x/Capstone1-Zoomcamp.git`
 - `cd Capstone1-Zoomcamp`
-- Download https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset/download, rename it to vegetables.zip and put it into **data** folder
+- Download https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset/download, rename it to vegetables.zip and put it into **data** folder (this is needed if you want to run [notebook.py](notebook.py) locally to check script works correctly)
 - `docker build -t vegetable_predict .`
 - `docker run -it --rm -p 8080:8080 vegetable_predict`
-- `python test.py` - you can put any image URL into that file for check (['Bean', 'Bitter_Gourd', 'Bottle_Gourd', 'Brinjal', 'Broccoli', 'Cabbage', 'Capsicum', 'Carrot', 'Cauliflower', 'Cucumber', 'Papaya', 'Potato', 'Pumpkin', 'Radish', 'Tomato'])
+- `python test.py 'https://www.kroger.com/product/images/large/front/0000000004062'` - you can put any image URL into that file for check (['Bean', 'Bitter_Gourd', 'Bottle_Gourd', 'Brinjal', 'Broccoli', 'Cabbage', 'Capsicum', 'Carrot', 'Cauliflower', 'Cucumber', 'Papaya', 'Potato', 'Pumpkin', 'Radish', 'Tomato'])
